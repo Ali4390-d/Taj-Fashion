@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+  <title>Taj Fashion · luxury women’s wear</title>
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="loader-ring"></div>
+    <div class="loader-text">TAJ FASHION</div>
+  </div>
+
+  <!-- SEARCH OVERLAY -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-close" id="searchClose"><i class="fas fa-times"></i></div>
+    <div class="search-box">
+      <input type="text" placeholder="Search for luxury..." id="searchInput">
+    </div>
+  </div>
+
+  <!-- QUICK VIEW MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content">
+      <div class="modal-close" id="modalClose"><i class="fas fa-times"></i></div>
+      <img src="" alt="Product" class="modal-img" id="modalImg">
+      <div class="modal-info">
+        <h2 id="modalTitle"></h2>
+        <div class="price" id="modalPrice"></div>
+        <p>Experience the ultimate blend of tradition and contemporary style. Handcrafted by master artisans, this piece features intricate detailing and premium fabrics, ensuring you stand out on any occasion. Limited edition collection.</p>
+        <button class="btn-outline" id="modalAddToCartBtn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap; width:100%;">
+      <div class="left">
+        <span><i class="fas fa-sun"></i> 38°C Mostly sunny</span>
+      </div>
+      <div class="right">
+        <span><i class="fab fa-instagram"></i> 333K followers</span>
+        <span class="music-badge"><i class="fas fa-music"></i> Nisha (Raid 2)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="logo">Taj<span>Fashion</span></div>
+      <ul class="nav-links">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#categories">Collections</a></li>
+        <li><a href="#arrivals">New Arrivals</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <i class="fas fa-search search-icon" id="searchIcon"></i>
+        <div style="position:relative; display:inline-block;">
+          <i class="fas fa-shopping-cart" id="cartIcon"></i>
+          <span class="cart-badge" id="cartCount">0</span>
+        </div>
+        <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#hero">Home</a>
+      <a href="#categories">Collections</a>
+      <a href="#arrivals">New Arrivals</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <h1>Where <i>Luxury</i> Meets Tradition</h1>
+      <p>Discover the epitome of refinement in every thread.</p>
+      <a href="#arrivals" class="btn">Explore Collection</a>
+    </div>
+    <div class="hero-badge">
+      <i class="fas fa-crown" style="color:var(--gold);"></i> New Bridal Collection 2026
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <div class="container reveal" id="categories">
+    <h2 class="section-title">Shop by Category</h2>
+    <div class="categories-grid">
+      <a href="#arrivals" class="category-card">
+        <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=300&h=300&fit=crop&crop=center" alt="Lehengas">
+        <h4>Lehengas</h4>
+      </a>
+      <a href="#arrivals" class="category-card">
+        <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=300&h=300&fit=crop&crop=center" alt="Sarees">
+        <h4>Sarees</h4>
+      </a>
+      <a href="#arrivals" class="category-card">
+        <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=300&h=300&fit=crop&crop=center" alt="Kurtis">
+        <h4>Kurtis</h4>
+      </a>
+      <a href="#arrivals" class="category-card">
+        <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=300&h=300&fit=crop&crop=center" alt="Bridal Wear">
+        <h4>Bridal Wear</h4>
+      </a>
+    </div>
+  </div>
+
+  <!-- FEATURED -->
+  <div class="container reveal">
+    <h2 class="section-title">Featured Collection</h2>
+    <div class="featured">
+      <div class="featured-grid">
+        <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=600&h=750&fit=crop&crop=center" alt="Sky Blue Lehenga" loading="lazy">
+        <div class="featured-info">
+          <h2>The Sky Blue Lehenga</h2>
+          <p>Handcrafted with intricate zari work and premium silk. A masterpiece of tradition.</p>
+          <div class="price">₹45,000</div>
+          <button class="btn-outline" id="featuredQuickView"><i class="fas fa-eye"></i> Quick View</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEW ARRIVALS -->
+  <div class="container reveal" id="arrivals">
+    <h2 class="section-title">New Arrivals</h2>
+    <div class="product-grid" id="productGrid">
+      <!-- cards will be injected by js -->
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="container reveal" id="about">
+    <div class="about">
+      <img src="https://images.unsplash.com/photo-1566206091558-7f218b696731?w=600&h=400&fit=crop&crop=center" alt="Taj Fashion boutique" loading="lazy">
+      <div>
+        <h2>Crafted with Heritage</h2>
+        <p>Taj Fashion couturier where luxury meets tradition and refinement in every thread. Every piece tells a story of timeless elegance, handpicked fabrics, and meticulous craftsmanship.</p>
+        <p style="margin-top:12px;"><i class="fas fa-map-pin" style="color:var(--gold);"></i> Paulkrugleraan 146, The Hague</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEWSLETTER + CONTACT -->
+  <div class="container reveal" id="contact">
+    <div class="newsletter">
+      <div>
+        <h3>Stay Updated</h3>
+        <p style="opacity:0.8;">Subscribe for exclusive drops & collections.</p>
+      </div>
+      <div class="input-group">
+        <input type="email" placeholder="Your email address" id="emailInput">
+        <button class="btn" id="subscribeBtn">Subscribe</button>
+      </div>
+    </div>
+    <div class="contact-details">
+      <a href="https://maps.google.com/?q=Paulkrugleraan+146,+The+Hague" target="_blank"><i class="fas fa-map-marker-alt"></i> Paulkrugleraan 146, The Hague, 2571 HN</a>
+      <a href="tel:+31707850643"><i class="fas fa-phone"></i> +31 70 785 0643</a>
+      <a href="mailto:alizada65@hotmail.nl"><i class="fas fa-envelope"></i> alizada65@hotmail.nl</a>
+      <a href="https://instagram.com/taj_f" target="_blank"><i class="fab fa-instagram"></i> @taj_f</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="brand">
+        <h2>Taj<span>Fashion</span></h2>
+        <p style="opacity:0.7; margin:8px 0;">Where luxury meets tradition.</p>
+        <div class="social">
+          <i class="fab fa-instagram" data-url="https://instagram.com"></i>
+          <i class="fab fa-facebook" data-url="https://facebook.com"></i>
+          <i class="fab fa-google" data-url="https://google.com"></i>
+        </div>
+      </div>
+      <div class="links">
+        <a data-scroll="categories">Collections</a>
+        <a data-scroll="about">About</a>
+        <a data-scroll="contact">Contact</a>
+      </div>
+      <div class="links">
+        <a class="footer-info" data-msg="Shipping info coming soon!">Shipping</a>
+        <a class="footer-info" data-msg="Returns info coming soon!">Returns</a>
+        <a class="footer-info" data-msg="Privacy policy coming soon!">Privacy</a>
+      </div>
+      <div class="copy">
+        © 2026 Taj Fashion. All rights reserved. <span style="opacity:0.5; margin-left:12px;"><i class="fas fa-music"></i> Vibe: Nisha (Raid 2)</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">✨ Item added to cart!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
